@@ -8,7 +8,7 @@ $a=$obj->showData("blogmain");
 <html>
 <head>
 	<title><?php echo $a[0]['blog_h1'];?></title>
-	<link rel="stylesheet" type="text/css" href="style/font-awesome-4.7.0/css/font-awesome.min.css"">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="style/main.css">
 </head>
 <body>
