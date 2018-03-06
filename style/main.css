@@ -1,0 +1,105 @@
+html{
+	margin: 0px;
+	padding: 0px;
+	text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Trench100'; 
+    src: url('font/trench.ttf'); 
+}
+h1 {
+	text-decoration: none;
+	color: black;
+	font-size: 60px;
+	margin: 0px;
+	line-height: 1.25;
+
+}
+.container{
+	padding-left: 17%;
+	padding-right: 17%; 
+}
+
+.topbar-about {
+	text-align: center;
+	color: #4d4d4d;
+}
+.topbar-about a {
+	text-decoration: none;
+	text-align: center;
+}
+
+.topbar-menu-ul {
+	display: inline-block;
+}
+.topbar-menu-social ul{
+	padding: 0;
+}
+.topbar-menu ul li {
+	display: inline-block;
+	text-decoration: none;
+	list-style: none;
+	font-size: 20px;
+}
+.topbar-menu ul li a {
+	text-decoration: none;
+	color: black;
+}
+.topbar-menu-ul ul li a:hover{
+	color: red;
+}
+.topbar-menu-social{
+	float: right;
+}
+.searchbar {
+	text-align: center;
+}
+.posts{
+	margin-bottom: 10px;
+	padding-left: 4%;
+	padding-right: 4%; 
+}
+.post-container {
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+    background-color: #fbfbfb;
+    margin: auto;
+    text-align: left;
+}
+.post-thumbnail-img-box{
+    display: inline-block;
+    margin: 0 auto;
+    text-align: left;
+    width: 400px;
+}
+.post-thumbnail-text{
+	display: inline-block;
+    text-align: left;
+    width: 278px;
+    vertical-align: top;
+}
+.post-title{
+	color: #000;
+    font-size: 22px;
+    font-weight: 500;
+}
+.post-thumbnail-desc{
+	max-height: 100px;
+    font-size: 15px;
+    text-align: left;
+    font-weight: 400;
+    color: #555;
+    font-family: 'Avenir Next', 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.article-post{
+
+}
+
+
+
+img {
+	width: 100%;
+}

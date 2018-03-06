@@ -1,0 +1,33 @@
+html{
+	margin:0px;
+	padding: 0px;
+}
+
+#header{
+	border:1px solid black;
+
+	text-align: center;
+	padding: 2px;
+	width: 20%
+	height:100vh;
+
+}
+#header ul {
+	margin: 5px;
+	padding: 0px;
+	text-decoration: none;
+	list-style: none;
+	
+}
+#header ul li {
+	display: inline-block;
+	text-decoration: none;
+	list-style: none;
+}
+.container {
+	padding: 0px 10% 0px 10%;
+	display: inline-block;
+	width:79%;
+	min-width: 500px;
+	text-align: center;
+}
