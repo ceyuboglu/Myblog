@@ -3,7 +3,7 @@
 	private $db = "myblog";
 	private $username = "root";
 	private $password = " ";
-	private $charset = "utf8";*/
+	private $charset = "utf8";
 		try
 		{
 			$db=new PDO("mysql:host=localhost;
@@ -12,8 +12,8 @@
 		}
 		catch(PDOExpception $e)
 		{
-			/*echo $e->getMessage();*/
+			echo $e->getMessage();
 			echo 'error';
 			print_r($e);
-		}
+		} */ 
  ?>
