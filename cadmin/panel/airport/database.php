@@ -75,9 +75,9 @@ class dbactions
 		}
 		return @$data;
 	}
-	public function getByid($id)
+	public function getByid($table,$id)
 	{
-		$sql="SELECT * FROM articles where id=$id";
+		$sql="SELECT * FROM $table where id=$id";
 		$q=$this->dbh->prepare($sql);
 		$q->execute();
 		$data = $q->fetch(\PDO::FETCH_ASSOC);
@@ -91,6 +91,26 @@ class dbactions
 		$result = $q->fetchAll(\PDO::FETCH_ASSOC);
 		return $result;
 	}
+	public function newComment($pageİd,$name,$email,$website=null,$text,$date)
+	{
+		$sql="INSERT INTO comments SET page_id=:id,comment_text=:text,comment_date=:date,comment_name=:name,comment_email=:email,comment_website=:website,comment_status=:status";
+		$q=$this->dbh->prepare($sql);
+		$q->execute(array(':id'=>$pageİd,':text'=>$text,':date'=>$date,':name'=>$name,':email'=>$email,':website'=>$website,':status'=>'0'));
+	}
+	public function getcomments($pageİd)
+	{
+		$sql="SELECT * FROM comments where page_id=$pageİd ORDER BY id DESC";
+		$q = $this->dbh->query($sql) or die("failed!");
+		while($r = $q->fetch(\PDO::FETCH_ASSOC)){
+		$data[]=$r;
+		}
+		return @$data;	
+	}
+
+	public function confirmComments($id)
+	{
+
+	}	
 
 
 }

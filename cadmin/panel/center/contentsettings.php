@@ -6,7 +6,6 @@ if (isset($_GET['showarticle']))
 {
 	$p=$obj->findArticle($_GET['article_id']);
 	$article=$_GET['article_id'];
-	
 }
 ?>
 <div class="container">
@@ -58,6 +57,16 @@ if (isset($_GET['showarticle']))
 	</form>
 
 </div>
+
+
+
+
+
+
+
+
+
+
 <?php 
 
 if (isset($_POST['contentsettingssave'])) 

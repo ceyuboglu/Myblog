@@ -35,6 +35,8 @@ if ($say==0){
 			<li><a href="contentsettings.php">Content Settings</a></li>
 			&nbsp
 			<li><a href="aboutsettings.php">About Settings</a></li>
+			&nbsp
+			<li><a href="commentsettings.php">Comment Settings</a></li>
 		</ul>
 	</div>
 

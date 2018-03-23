@@ -1,6 +1,6 @@
-<?php 
+<?php
 ini_set("display_errors","1");
-error_reporting(E_ALL);
+error_reporting(E_ALL); 
 require 'cadmin/panel/airport/database.php';
 use ceyuboglu\dbactions;
 $obj = new dbactions('cadmin/panel/airport/config.yml');

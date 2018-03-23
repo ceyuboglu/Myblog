@@ -61,9 +61,9 @@ h1 {
 	padding-right: 4%; 
 }
 .post-container {
-	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.06);
+	box-shadow: 2px 2px 2px rgba(1, 0, 0, 0.1);
     border-radius: 4px;
-    background-color: #fbfbfb;
+    background-color: rgba(0, 0, 0, 0.03);
     margin: auto;
     text-align: left;
 }
@@ -97,6 +97,9 @@ h1 {
 img {
 	width: 100%;
 	height: 100%;
+}
+.form-group{
+	
 }
 @media only screen and (min-width: 768px ) and (max-width: 1025px){
 .post-container {
@@ -188,5 +191,3 @@ img {
 	padding: 0;
 }
 
-
-}
